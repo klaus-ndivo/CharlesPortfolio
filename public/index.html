@@ -10,6 +10,19 @@
         <!-- =====BOX ICONS ===== -->
         <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
 
+        <!-- js -->
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+        <script type="text/javascript">
+           let KEY = process.env.PUBLIC_EMAIL_JS_KEY
+            (
+                function() {
+                    emailjs.init(KEY)
+                }
+            )
+        </script>
+    
+
         <title>My Portfolio</title>
     </head>
     <body>
@@ -40,7 +53,7 @@
             <!--===== HOME =====-->
             <section class="home bd-grid" id="home">
                 <div class="home__data">
-                    <h1 class="home__title">Hi,<br>I'am <span class="home__title-color">Charles</span><br> Front-end Dev</h1>
+                    <h1 class="home__title">Hi,<br>I'am <span class="home__title-color">Charles</span><br> UI/UX Designer</h1>
 
                     <a href="#contact" class="button">Contact</a>
                 </div>
@@ -180,10 +193,18 @@
 
                 <div class="contact__container bd-grid">
                     <form action="" class="contact__form">
-                        <input type="text" placeholder="Name" class="contact__input">
-                        <input type="mail" placeholder="Email" class="contact__input">
+                        <input type="text" 
+                        name = "user_name"
+                        required
+                        placeholder="Name" class="contact__input">
+                        <input type="mail" 
+                        required 
+                        name="user_email"
+                        placeholder="Email" class="contact__input">
                         <textarea name="" id="" cols="0" rows="10" class="contact__input"></textarea>
-                        <input type="button" value="Get In Touch" class="contact__button button">
+                        <input type="submit" 
+                        name="user_message"
+                        value="Get In Touch" class="contact__button button">
                     </form>
                 </div>
             </section>
@@ -191,9 +212,27 @@
 
         <!--===== FOOTER =====-->
         <footer class="footer">
-            <p class="footer__title">Charles Ndivo</p>
+            <div class="footer__header">
+                <p class="footer__title">Charles Ndivo</p>
+                <div class="footer__container">
+                    <p class="contacts__link">
+                        <span class="link__label">
+                            Tel:
+                        </span>
+                        <a class="links" href="tel:+25718819228">+254718819228</a> 
+                    </p>
+                    <p class="contacts__link">
+                        <span class="link__label">
+                            Email Address:
+                        </span>
+                        <a class="links" href="mailto:charlesndivo847@gmail.com">charlesndivo847@gmail.com</a> 
+                    </p>
+    
+                </div>
+            </div>
             <div class="footer__social">
                 <h4>Follow the link to my Instagram page</h4>
+                
                 <a href="https://www.instagram.com/klaus_prolifics/" class="footer__icon"><i class='bx bxl-instagram' ></i></a>
             </div>
             <p class="footer__copy">&#169; Thankyou for Paying a visit a better site under development</p>
@@ -205,5 +244,8 @@
 
         <!--===== MAIN JS =====-->
         <script src="assets/js/main.js"></script>
+
+        <!-- Contact EmailJs  -->
+        <!-- <script src="./contactform.js" ></script> -->
     </body>
 </html>
