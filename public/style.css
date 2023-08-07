@@ -386,9 +386,7 @@ img {
   font-size: var(--normal-font-size);
   font-weight: bold;
   outline: none;
-  border: none;
-  margin-left: auto;
- 
+  border: none; 
 }
 
 /* Darker background on mouse-over */
