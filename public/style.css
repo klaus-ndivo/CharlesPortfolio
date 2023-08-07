@@ -382,11 +382,14 @@ img {
 .btn {
   background-color: RoyalBlue;
   color: white;
-  padding: 12px 30px;
   cursor: pointer;
-  font-size: 16px;
+  font-size: var(--normal-font-size);
   font-weight: bold;
-  
+  outline: none;
+  display: block;
+  border: none;
+  margin-left: auto;
+ 
 }
 
 /* Darker background on mouse-over */
