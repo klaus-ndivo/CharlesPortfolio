@@ -379,12 +379,13 @@ img {
   margin-left: auto;
 }
 .btn {
-  background-color: rgb(30, 83, 255);
+  background-color: RoyalBlue;
   border-radius:6px;
   color: white;
   padding: 12px 30px;
   cursor: pointer;
   font-size: 16px;
+  font-weight: bold;
   
 }
 
