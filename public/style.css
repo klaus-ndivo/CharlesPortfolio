@@ -386,7 +386,6 @@ img {
   font-size: var(--normal-font-size);
   font-weight: bold;
   outline: none;
-  display: block;
   border: none;
   margin-left: auto;
  
