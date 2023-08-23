@@ -84,7 +84,9 @@
 
                 <div class="about__container bd-grid">
                     <div class="about__img">
-                        <img src="./Images/Aboutme.jpg" alt="">
+                        <div class="zoom__image">
+                            <img src="./Images/Aboutme.jpg" alt="Image">
+                        </div>
                     </div>
                     
                     <div>
@@ -159,17 +161,23 @@
                         </div>
                     </div>
                     
-                    <div>              
-                        <img src="./assets/img/work3.jpg" alt="" class="skills__img">
-                    </div>
+                    <!-- <div>              
+                        <img src="./Images/Aboutme.jpg" alt="" class="skills__img">
+                    </div> -->
+
+                    <div class="photo-container">
+                        <div class="zoom-image">
+                          <img src="./Images/AAA.png" alt="Image">
+                        </div>
+                      </div>
                 </div>
             </section>
 
             <!--===== WORK =====-->
-            <section class="work section" id="work">
+        <section class="work section" id="work">
                 <h2 class="section-title">What I Do</h2>
 
-                <div class="work__container bd-grid">
+                <!-- <div class="work__container bd-grid">
                     <a href="./comming-soon.html" class="work__img">
                         <img src="./Images/pexels-cottonbro-studio-5483070.jpg" alt="Web">
                         <div class="overlay">Websites</div>
@@ -182,12 +190,45 @@
                     </a>
                     <a href="./Graphics.html" class="work__img">
                         <img src="./Images/julian-hochgesang-7SV4cz3UFEI-unsplash.jpg" alt="">
-                        <div class="overlay">Graphic Designs</div>
+                        <div class="overlay">Graphic Designs</div> -->
 
+                    
+                <!-- </div> -->
+            <div class="work__container">
+                    <a href="./comming-soon.html" class="work__img">
+                        <div class="image-container">
+                            <div class="image-zoom">
+                                <img src="./Images/pexels-cottonbro-studio-5483070.jpg" alt="">
+                                <div class="image-text">
+                                    <p>Web Development</p>
+                                </div>
+                            </div>
                     </a>
-                </div>
-            </section>
+                </div>      
 
+                    <div class="image-container">
+                        <a href="./Ui.html" class="work__img">
+                            <div class="image-zoom">
+                                <img src="./Images/magnus-andersson-KAzgxInZXMo-unsplash.jpg" alt="">
+                                <div class="image-text">
+                                    <p>UI/UX Designing</p>
+                                </div>
+                            </div>   
+                        </a>
+                    </div>   
+
+                    <div class="image-container">
+                        <a href="./Graphics.html" class="work__img">
+                            <div class="image-zoom">
+                                <img src="./Images/julian-hochgesang-7SV4cz3UFEI-unsplash.jpg" alt="">
+                                <div class="image-text">
+                                    <p>Graphic Designing</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>                   
+            </div>
+        </section>
             <!--===== CONTACT =====-->
             <section class="contact section" id="contact">
                 <h2 class="section-title">Contact</h2>
